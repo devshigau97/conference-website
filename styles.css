@@ -1,0 +1,221 @@
+  :root{
+    --green-dark:#1f4d3d;
+    --green-mid:#2f7a54;
+    --green-light:#eaf5ee;
+    --accent:#c98f2b;
+    --text:#233229;
+    --muted:#5b6b62;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Segoe UI", Arial, sans-serif;
+    color:var(--text);
+    background:#fff;
+    line-height:1.6;
+  }
+  header{
+    position:relative;
+    color:#fff;
+    padding:40px 20px 50px;
+    text-align:center;
+    overflow:hidden;
+    background:linear-gradient(135deg, var(--green-dark), var(--green-mid));
+  }
+
+  header::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:url('images/ISMR motiff.jpg');
+    background-repeat:repeat;
+    background-size:220px 220px;
+    opacity:0.18;
+    pointer-events:none;
+  }
+
+  header > *{
+    position:relative;
+    z-index:1;
+  }
+  .logo-box{
+    width:140px;
+    height:140px;
+    margin:0 auto 20px;
+    background:rgba(255,255,255,0.15);
+    border:2px dashed rgba(255,255,255,0.6);
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
+    text-align:center;
+    padding:8px;
+  }
+  /* If you have a real logo image file, delete the .logo-box div
+     and replace it with: <img src="logo.png" alt="Conference logo" style="max-width:180px;"> */
+  header h1{
+    margin:0 0 10px;
+    font-size:1.8rem;
+    font-weight:700;
+  }
+  header p.subtitle{
+    margin:0;
+    font-size:1.05rem;
+    color:#dfeee5;
+  }
+  .dates-badge{
+    display:inline-block;
+    margin-top:18px;
+    background:var(--accent);
+    color:#2a1c05;
+    font-weight:600;
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:1rem;
+  }
+  nav{
+    background:var(--green-dark);
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:12px;
+  }
+  nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:0.95rem;
+    opacity:0.9;
+  }
+  nav a:hover{opacity:1; text-decoration:underline;}
+  main{
+    max-width:900px;
+    margin:0 auto;
+    padding:50px 20px;
+  }
+  section{margin-bottom:55px;}
+  h2{
+    color:var(--green-dark);
+    font-size:1.4rem;
+    border-bottom:3px solid var(--accent);
+    display:inline-block;
+    padding-bottom:6px;
+    margin-bottom:18px;
+  }
+  .card-row{
+    display:flex;
+    gap:24px;
+    flex-wrap:wrap;
+  }
+  .card{
+    flex:1 1 260px;
+    background:var(--green-light);
+    border:1px solid #d3e6da;
+    border-radius:10px;
+    padding:26px;
+  }
+  .card h3{
+    margin-top:0;
+    color:var(--green-mid);
+    font-size:1.15rem;
+  }
+  .card p{color:var(--muted); font-size:0.95rem;}
+  .btn{
+    display:inline-block;
+    margin-top:14px;
+    background:var(--green-mid);
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    padding:11px 22px;
+    border-radius:6px;
+    font-size:0.95rem;
+  }
+  .btn:hover{background:var(--green-dark);}
+  .btn.secondary{
+    background:#fff;
+    color:var(--green-mid);
+    border:2px solid var(--green-mid);
+  }
+  .btn.secondary:hover{background:var(--green-light);}
+  .placeholder-note{
+    font-size:0.8rem;
+    color:#a05a00;
+    background:#fff6e8;
+    border:1px dashed #e0b46a;
+    padding:6px 10px;
+    border-radius:6px;
+    margin-top:10px;
+    display:inline-block;
+  }
+  footer{
+    position:relative;
+    background:var(--green-dark);
+    color:#d8e8de;
+    text-align:center;
+    padding:26px 20px;
+    font-size:0.85rem;
+    overflow:hidden;
+  }
+
+  footer::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:url('images/ISMR motiff.jpg');
+    background-repeat:repeat;
+    background-size:240px 240px;
+    opacity:0.16;
+    pointer-events:none;
+  }
+
+  footer > *{
+    position:relative;
+    z-index:1;
+  }
+
+  footer a{color:#fff;}
+
+  .form-status{
+    margin-top:14px;
+    padding:10px 12px;
+    border-radius:6px;
+    font-size:0.92rem;
+  }
+  .form-status.success{
+    background:#e8f7ed;
+    color:#1f6a3d;
+    border:1px solid #9fd8b3;
+  }
+  .form-status.error{
+    background:#fdecea;
+    color:#a42828;
+    border:1px solid #f2b0ad;
+  }
+  .lookup-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:8px;
+    background:#fff;
+    border:1px solid #d3e6da;
+  }
+  .lookup-table th,
+  .lookup-table td{
+    padding:10px 12px;
+    border-bottom:1px solid #e6efe8;
+    text-align:left;
+    vertical-align:top;
+  }
+  .lookup-table th{
+    background:#f4fbf6;
+    width:35%;
+    color:var(--green-dark);
+    font-weight:600;
+  }
+  .btn:disabled{
+    opacity:0.7;
+    cursor:not-allowed;
+  }
+
+  
